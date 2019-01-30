@@ -11,13 +11,15 @@ import (
 )
 
 const (
-	// CmdPrefix is the prefix used to identify a command.
-	// !hello would be identified as a command
-	CmdPrefix = "!"
-
 	// MsgBuffer is the max number of messages which can be buffered
 	// while waiting to flush them to the chat service.
 	MsgBuffer = 100
+)
+
+var (
+	// CmdPrefix is the prefix used to identify a command.
+	// !hello would be identified as a command
+	CmdPrefix = "!"
 )
 
 // Bot handles the bot instance
