@@ -1,4 +1,4 @@
-// Package irc implements IRC handlers for github.com/go-chat-bot/bot
+// Package irc implements IRC handlers for github.com/hqpko/bot
 package irc
 
 import (
@@ -6,7 +6,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/go-chat-bot/bot"
+	"github.com/hqpko/bot"
 	ircevent "github.com/thoj/go-ircevent"
 )
 

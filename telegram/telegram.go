@@ -1,4 +1,4 @@
-// Package telegram implements Telegram handlers for github.com/go-chat-bot/bot
+// Package telegram implements Telegram handlers for github.com/hqpko/bot
 package telegram
 
 import (
@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-chat-bot/bot"
+	"github.com/hqpko/bot"
 	tgbotapi "gopkg.in/telegram-bot-api.v3"
 )
 

@@ -1,6 +1,6 @@
 # go-bot
 
-[![Circle CI](https://circleci.com/gh/go-chat-bot/bot/tree/master.svg?style=svg)](https://circleci.com/gh/go-chat-bot/bot/tree/master) [![GoDoc](https://godoc.org/github.com/go-chat-bot/bot?status.png)](https://godoc.org/github.com/go-chat-bot/bot) [![Coverage Status](https://coveralls.io/repos/github/go-chat-bot/bot/badge.svg?branch=master)](https://coveralls.io/github/go-chat-bot/bot?branch=master) ![Go report](https://goreportcard.com/badge/github.com/go-chat-bot/bot) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+[![Circle CI](https://circleci.com/gh/go-chat-bot/bot/tree/master.svg?style=svg)](https://circleci.com/gh/go-chat-bot/bot/tree/master) [![GoDoc](https://godoc.org/github.com/hqpko/bot?status.png)](https://godoc.org/github.com/hqpko/bot) [![Coverage Status](https://coveralls.io/repos/github/go-chat-bot/bot/badge.svg?branch=master)](https://coveralls.io/github/go-chat-bot/bot?branch=master) ![Go report](https://goreportcard.com/badge/github.com/hqpko/bot) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 IRC, Slack & Telegram bot written in [Go][go] using [go-ircevent][go-ircevent] for IRC connectivity, [nlopes/slack](https://github.com/nlopes/slack) for Slack and [Syfaro/telegram-bot-api](https://github.com/Syfaro/telegram-bot-api) for Telegram.
 
@@ -16,9 +16,9 @@ You can also write your own, it's really simple.
 
 This project uses the new [Go 1.11 modules](https://github.com/golang/go/wiki/Modules) if you have Go 1.11 installed, just clone the project and follow the instructions bellow, when you build Go will automatically download all dependencies.
 
-To test the bot, use the [debug](https://github.com/go-chat-bot/bot/tree/master/debug) console app.
+To test the bot, use the [debug](https://github.com/hqpko/bot/tree/master/debug) console app.
 
-- Clone this repository or use `go get github.com/go-chat-bot`
+- Clone this repository or use `go get github.com/hqpko`
 - Build everything: `go build ./...`
 - Build and execute the debug app:
   -  `cd debug`
@@ -40,7 +40,7 @@ To test the bot, use the [debug](https://github.com/go-chat-bot/bot/tree/master/
 To deploy your go-bot to Slack, you need to:
 
 * [Create a new bot user](https://my.slack.com/services/new/bot) integration on Slack and get your token
-* Import the package `github.com/go-chat-bot/bot/slack`
+* Import the package `github.com/hqpko/bot/slack`
 * Import the commands you would like to use
 * Call `slack.Run(token)`
 
@@ -52,7 +52,7 @@ package main
 import (
     "os"
 
-    "github.com/go-chat-bot/bot/slack"
+    "github.com/hqpko/bot/slack"
     _ "github.com/go-chat-bot/plugins/catfacts"
     _ "github.com/go-chat-bot/plugins/catgif"
     _ "github.com/go-chat-bot/plugins/chucknorris"
@@ -68,7 +68,7 @@ func main() {
 
 To deploy your own go-bot to IRC, you need to:
 
-* Import the package `github.com/go-chat-bot/bot/irc`
+* Import the package `github.com/hqpko/bot/irc`
 * Import the commands you would like to use
 * Fill the Config struct
 * Call `irc.Run(config)`
@@ -78,7 +78,7 @@ Here is a full example:
 package main
 
 import (
-	"github.com/go-chat-bot/bot/irc"
+	"github.com/hqpko/bot/irc"
 	_ "github.com/go-chat-bot/plugins/catfacts"
 	_ "github.com/go-chat-bot/plugins/catgif"
 	_ "github.com/go-chat-bot/plugins/chucknorris"
@@ -108,7 +108,7 @@ To join channels with passwords just put the password after the channel name sep
 To deploy your go-bot to Telegram, you need to:
 
 * Follow Telegram instructions to [create a new bot user](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and get your token
-* Import the package `github.com/go-chat-bot/bot/telegram`
+* Import the package `github.com/hqpko/bot/telegram`
 * Import the commands you would like to use
 * Call `telegram.Run(token, debug)`
 
@@ -120,7 +120,7 @@ package main
 import (
     "os"
 
-    "github.com/go-chat-bot/bot/telegram"
+    "github.com/hqpko/bot/telegram"
     _ "github.com/go-chat-bot/plugins/catfacts"
     _ "github.com/go-chat-bot/plugins/catgif"
     _ "github.com/go-chat-bot/plugins/chucknorris"
@@ -136,7 +136,7 @@ func main() {
 
 To deploy your go-bot to Rocket.chat, you need to:
 
-* Import the package `github.com/go-chat-bot/bot/rocket`
+* Import the package `github.com/hqpko/bot/rocket`
 * Import the commands you would like to use
 * Call `rocket.Run(config)`
 
@@ -148,7 +148,7 @@ package main
 import (
 	"os"
 
-	"github.com/go-chat-bot/bot/rocket"
+	"github.com/hqpko/bot/rocket"
 	_ "github.com/go-chat-bot/plugins/godoc"
 	_ "github.com/go-chat-bot/plugins/catfacts"
 	_ "github.com/go-chat-bot/plugins/catgif"
@@ -207,7 +207,7 @@ package main
 import (
 	"os"
 
-	"github.com/go-chat-bot/bot/google-chat"
+	"github.com/hqpko/bot/google-chat"
 	_ "github.com/go-chat-bot/plugins/godoc"
 	_ "github.com/go-chat-bot/plugins/catfacts"
 	_ "github.com/go-chat-bot/plugins/catgif"

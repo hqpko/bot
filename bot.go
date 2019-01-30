@@ -33,14 +33,14 @@ type Bot struct {
 	// Protocol and Server are used by MesssageStreams to
 	// determine if this is the correct bot to send a message on
 	// see:
-	// https://github.com/go-chat-bot/bot/issues/37#issuecomment-277661159
-	// https://github.com/go-chat-bot/bot/issues/97#issuecomment-442827599
+	// https://github.com/hqpko/bot/issues/37#issuecomment-277661159
+	// https://github.com/hqpko/bot/issues/97#issuecomment-442827599
 	Protocol string
 	// Server and Protocol are used by MesssageStreams to
 	// determine if this is the correct bot to send a message on
 	// see:
-	// https://github.com/go-chat-bot/bot/issues/37#issuecomment-277661159
-	// https://github.com/go-chat-bot/bot/issues/97#issuecomment-442827599
+	// https://github.com/hqpko/bot/issues/37#issuecomment-277661159
+	// https://github.com/hqpko/bot/issues/97#issuecomment-442827599
 	Server string
 }
 

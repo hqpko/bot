@@ -80,7 +80,7 @@ type User struct {
 }
 
 // MessageStream allows event information to be transmitted to an arbitrary channel
-// https://github.com/go-chat-bot/bot/issues/97
+// https://github.com/hqpko/bot/issues/97
 type MessageStream struct {
 	Data chan MessageStreamMessage
 	// Done is almost never called, usually the bot should just leave the chan open

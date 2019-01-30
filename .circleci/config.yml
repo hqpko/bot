@@ -5,7 +5,7 @@ jobs:
       - image: circleci/golang:1.11
         environment:
           GO111MODULE: "on"      
-    working_directory: /go/src/github.com/go-chat-bot/bot
+    working_directory: /go/src/github.com/hqpko/bot
     steps:
       - checkout
       - run: go test -v -cover -race -coverprofile=coverage.out          
