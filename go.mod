@@ -1,4 +1,4 @@
-module github.com/go-chat-bot/bot
+module github.com/hqpko/bot
 
 require (
 	cloud.google.com/go v0.32.0
